@@ -13,3 +13,14 @@
     max-width: 960px;
     margin: 0 auto;
 }
+
+.list-item{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 5px;
+}
+
+.list-item span{
+    cursor: pointer;
+}
