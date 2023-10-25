@@ -32,6 +32,9 @@ createApp({
             }
             this.toDos.push(this.newTask)
             this.newTaskText = ''
+        },
+        invertStatus(index){
+            this.toDos[index].done = !this.toDos[index].done
         }
     }
 }).mount('#app')

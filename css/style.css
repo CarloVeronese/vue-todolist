@@ -21,6 +21,6 @@
     gap: 5px;
 }
 
-.list-item span{
+.list-item *{
     cursor: pointer;
 }

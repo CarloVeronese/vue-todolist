@@ -14,7 +14,7 @@
             <button @click="addActivity">Add activity</button>
             <ul>
                 <li v-for="(activity, index) in toDos" class="list-item">
-                    <div :class="{ 'activity-done': activity.done }">{{ activity.text }}</div>
+                    <div :class="{ 'activity-done': activity.done }" @click="invertStatus(index)">{{ activity.text }}</div>
                     <span @click="removeActivity(index)">&cross;</span>
                 </li>
             </ul>
