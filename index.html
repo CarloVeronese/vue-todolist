@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <div class="container">
-            <input type="text" name="toDoList" placeholder="New activity" v-model="newTaskText">
+            <input type="text" name="toDoList" placeholder="New activity" v-model="newTaskText" @keyup.enter="addActivity">
             <button @click="addActivity">Add activity</button>
             <ul>
                 <li v-for="(activity, index) in toDos" class="list-item">
