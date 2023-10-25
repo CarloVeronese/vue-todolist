@@ -10,7 +10,8 @@
 <body>
     <div id="app">
         <div class="container">
-            <!-- <input type="text" name="toDoList" id="" v-model="newTask"> -->
+            <input type="text" name="toDoList" placeholder="New activity" v-model="newTaskText">
+            <button @click="addActivity">Add activity</button>
             <ul>
                 <li v-for="(activity, index) in toDos" class="list-item">
                     <div :class="{ 'activity-done': activity.done }">{{ activity.text }}</div>

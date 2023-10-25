@@ -17,12 +17,21 @@ createApp({
                     done: false
                 },
             ],
-            // newTask: ''
+            newTaskText: '',
+            newTask: ''
         }
     },
     methods: {
         removeActivity(index){
             this.toDos.splice(index, 1)
+        },
+        addActivity(){
+            this.newTask = {
+                text: this.newTaskText,
+                done: false
+            }
+            this.toDos.push(this.newTask)
+            this.newTaskText = ''
         }
     }
 }).mount('#app')
